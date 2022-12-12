@@ -1,6 +1,4 @@
 const fs = require('fs')
-const express= require('express')
-const app= express()
 
 class ProductManager{
     
@@ -142,6 +140,6 @@ class ProductManager{
         }
     }
 }
-const electronicProducts = new ProductManager("./electronic-products.json")
+const electronicProducts = new ProductManager("../data/prod.json")
 
 module.exports = electronicProducts
