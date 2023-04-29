@@ -26,7 +26,7 @@ router.post('/', (req, res)=>{
     const data = req.body
     if(!data.title || !data.description || !data.price || !data.stock|| !data.category){
         res.status(206).send("incomplete fields")
-    }else{
+   }else{
         manager.addProducts(data)
         res.status(201).send("Product created")
     }
